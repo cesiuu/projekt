@@ -1,0 +1,308 @@
+﻿<Window
+    x:Class="projekt_ces_13611.Window4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:projekt_ces_13611"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="EdycjaKlienta"
+    Width="720"
+    Height="395"
+    mc:Ignorable="d">
+    <Grid Background="#AAAAAA">
+        <Button
+            Width="150"
+            Height="42"
+            Margin="101,287,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="EdytujKlienta"
+            Content="Akceptuj" />
+        <TextBox
+            Name="text7"
+            Width="116"
+            Height="33"
+            Margin="135,78,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="97,78,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Imie" />
+        <TextBox
+            x:Name="text8"
+            Width="116"
+            Height="33"
+            Margin="135,116,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="70,116,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Nazwisko" />
+        <TextBox
+            x:Name="text9"
+            Width="116"
+            Height="33"
+            Margin="135,154,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="82,154,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Telefon" />
+        <TextBox
+            x:Name="text10"
+            Width="116"
+            Height="33"
+            Margin="135,192,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="91,192,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Email" />
+        <TextBox
+            x:Name="text11"
+            Width="116"
+            Height="33"
+            Margin="135,230,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="89,230,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Adres" />
+        <TextBox
+            x:Name="text107"
+            Width="82"
+            Height="33"
+            Margin="452,112,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="text108"
+            Width="82"
+            Height="33"
+            Margin="452,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="text109"
+            Width="82"
+            Height="33"
+            Margin="452,188,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="text110"
+            Width="82"
+            Height="33"
+            Margin="452,226,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="34"
+            Margin="337,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Usuń wiersz, gdzie:" />
+        <Button
+            Width="70"
+            Height="33"
+            Margin="573,112,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKlientaImie"
+            Content="Usuń" />
+        <Button
+            Width="70"
+            Height="33"
+            Margin="573,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKlientaNazwisko"
+            Content="Usuń" />
+        <Button
+            Width="70"
+            Height="33"
+            Margin="573,188,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKlientaTelefon"
+            Content="Usuń" />
+        <Button
+            Width="70"
+            Height="33"
+            Margin="573,226,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKlientaEmail"
+            Content="Usuń" />
+        <TextBox
+            x:Name="text1071"
+            Width="82"
+            Height="33"
+            Margin="452,74,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="386,74,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ID Klienta" />
+        <Button
+            Width="70"
+            Height="33"
+            Margin="573,74,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKlientaID"
+            Content="Usuń" />
+        <TextBox
+            x:Name="text111"
+            Width="82"
+            Height="33"
+            Margin="452,264,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Button
+            Width="70"
+            Height="33"
+            Margin="573,264,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKlientaAdres"
+            Content="Usuń" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="415,112,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Imie" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="388,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Nazwisko" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="400,188,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Telefon" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="409,226,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Email" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="407,264,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Adres" />
+        <ComboBox
+            x:Name="Klientidboxusun"
+            Width="29"
+            Height="33"
+            Margin="539,74,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Klientidboxusun_SelectionChanged" />
+        <ComboBox
+            x:Name="Imieboxusun"
+            Width="29"
+            Height="33"
+            Margin="539,112,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Imieboxusun_SelectionChanged" />
+        <ComboBox
+            x:Name="Nazwiskoboxusun"
+            Width="29"
+            Height="33"
+            Margin="539,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Nazwiskoboxusun_SelectionChanged" />
+        <ComboBox
+            x:Name="Telefonboxusun"
+            Width="29"
+            Height="33"
+            Margin="539,188,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Telefonboxusun_SelectionChanged" />
+        <ComboBox
+            x:Name="Emailboxusun"
+            Width="29"
+            Height="33"
+            Margin="539,226,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Emailboxusun_SelectionChanged" />
+        <ComboBox
+            x:Name="Adresboxusun"
+            Width="29"
+            Height="33"
+            Margin="539,264,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Adresboxusun_SelectionChanged" />
+        <Label
+            Width="auto"
+            Height="34"
+            Margin="113,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Dodaj klienta" />
+    </Grid>
+</Window>

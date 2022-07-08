@@ -1,0 +1,148 @@
+﻿<Window
+    x:Class="projekt_ces_13611.Window5"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:projekt_ces_13611"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="EdycjaKoszyka"
+    Width="720"
+    Height="278"
+    mc:Ignorable="d">
+    <Grid Background="#AAAAAA">
+        <Button
+            Width="153"
+            Height="42"
+            Margin="108,173,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="EdytujKoszyk"
+            Content="Akceptuj" />
+        <TextBox
+            x:Name="text12"
+            Width="82"
+            Height="33"
+            Margin="145,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="53,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ID zamówienia" />
+        <TextBox
+            x:Name="text13"
+            Width="82"
+            Height="33"
+            Margin="145,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="auto"
+            Height="33"
+            Margin="66,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ID produktu" />
+        <TextBox
+            x:Name="text112"
+            Width="82"
+            Height="34"
+            Margin="439,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="text113"
+            Width="82"
+            Height="34"
+            Margin="439,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Button
+            Width="55"
+            Height="34"
+            Margin="560,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKoszykIdZamowienia"
+            Content="Usuń" />
+        <Label
+            Width="auto"
+            Height="34"
+            Margin="347,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ID zamówienia" />
+        <Label
+            Width="auto"
+            Height="32"
+            Margin="360,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ID produktu" />
+        <Button
+            Width="55"
+            Height="34"
+            Margin="560,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="UsunKoszykIdProduktu"
+            Content="Usuń" />
+        <Label
+            Width="auto"
+            Height="34"
+            Margin="324,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Usuń wiersz, gdzie:" />
+        <ComboBox
+            x:Name="Produktidboxdodaj"
+            Width="29"
+            Height="33"
+            Margin="232,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Produktidboxdodaj_SelectionChanged" />
+        <ComboBox
+            x:Name="Zamowienieidboxusun"
+            Width="29"
+            Height="33"
+            Margin="526,71,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Zamowienieidboxusun_SelectionChanged" />
+        <ComboBox
+            x:Name="Produktidboxusun"
+            Width="29"
+            Height="33"
+            Margin="526,108,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Produktidboxusun_SelectionChanged" />
+        <Label
+            Width="auto"
+            Height="34"
+            Margin="87,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Dodaj produkt do koszyka" />
+        <ComboBox
+            x:Name="Zamowienieidboxdodaj"
+            Width="29"
+            Height="33"
+            Margin="232,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectionChanged="Zamowienieidboxdodaj_SelectionChanged" />
+    </Grid>
+</Window>
