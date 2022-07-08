@@ -22,6 +22,9 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class Window6 : Window
     {
+        /// <summary>
+        /// Konstruktor inicjuje obiekt klasy Window6 i wypełnia comboboxy do dodawania i usuwania
+        /// </summary>
         public Window6()
         {
             InitializeComponent();

@@ -24,6 +24,9 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Konstruktor inicjuje obiekt klasy MainWindow
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();

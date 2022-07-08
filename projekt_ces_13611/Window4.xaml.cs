@@ -22,6 +22,9 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class Window4 : Window
     {
+        /// <summary>
+        /// Konstruktor inicjuje obiekt klasy Window4 i wypełnia combobox do usuwania
+        /// </summary>
         public Window4()
         {
             InitializeComponent();

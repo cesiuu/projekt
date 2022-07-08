@@ -24,6 +24,9 @@ namespace projekt_ces_13611
     {
         public Window5()
         {
+            /// <summary>
+            /// Konstruktor inicjuje obiekt klasy Window5 i wypełnia comboboxy do dodawania i usuwania
+            /// </summary>
             InitializeComponent();
             Dodawanieboxfill();
             Usuwanieboxfill();
