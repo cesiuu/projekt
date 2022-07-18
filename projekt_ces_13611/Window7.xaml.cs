@@ -19,11 +19,11 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class Window7 : Window
     {
-        string admin_login = "admin";
-        string admin_password = "admin";
-        string user_login = "user";
-        string user_password = "user";
-        string who_logged;
+        public static string admin_login = "admin";
+        public static string admin_password = "admin";
+        public static string user_login = "user";
+        public static string user_password = "user";
+        public static string who_logged;
         public Window7()
         {
             InitializeComponent();

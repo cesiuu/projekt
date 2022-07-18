@@ -32,6 +32,10 @@ namespace projekt_ces_13611
             InitializeComponent();
         }
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\a\source\repos\projekt_programowanie\projekt_programowanie\_data\Database1.mdf;Integrated Security = True";
+        Window7 win7 = new Window7();
+        string who_logged = Window7.who_logged;
+        string admin_login = Window7.admin_login;
+        string user_login = Window7.user_login;
         void FillKlienci(object sender, RoutedEventArgs e)
         {
             using (BloggingContext db = new BloggingContext(connectionString))
@@ -82,33 +86,75 @@ namespace projekt_ces_13611
         }
         void EdycjaProducenta(object sender, RoutedEventArgs e)
         {
-            Window1 win1 = new Window1();
-            win1.Show();
+            if (who_logged == admin_login)
+            {
+                Window1 win1 = new Window1();
+                win1.Show();
+            }
+            else if (who_logged == user_login)
+            {
+                MessageBox.Show("Niewystarczające uprawnienia");
+            }
         }
         void EdycjaKategorii(object sender, RoutedEventArgs e)
         {
-            Window2 win2 = new Window2();
-            win2.Show();
+            if (who_logged == admin_login)
+            {
+                Window2 win2 = new Window2();
+                win2.Show();
+            }
+            else if (who_logged == user_login)
+            {
+                MessageBox.Show("Niewystarczające uprawnienia");
+            }
         }
         void EdycjaTowaru(object sender, RoutedEventArgs e)
         {
-            Window3 win3 = new Window3();
-            win3.Show();
+            if (who_logged == admin_login)
+            {
+                Window3 win3 = new Window3();
+                win3.Show();
+            }
+            else if (who_logged == user_login)
+            {
+                MessageBox.Show("Niewystarczające uprawnienia");
+            }
         }
         void EdycjaKlienta(object sender, RoutedEventArgs e)
         {
-            Window4 win4 = new Window4();
-            win4.Show();
+            if (who_logged == admin_login)
+            {
+                Window4 win4 = new Window4();
+                win4.Show();
+            }
+            else if (who_logged == user_login)
+            {
+                MessageBox.Show("Niewystarczające uprawnienia");
+            }
         }
         void EdycjaKoszyka(object sender, RoutedEventArgs e)
         {
-            Window5 win5 = new Window5();
-            win5.Show();
+            if (who_logged == admin_login)
+            {
+                Window5 win5 = new Window5();
+                win5.Show();
+            }
+            else if (who_logged == user_login)
+            {
+                MessageBox.Show("Niewystarczające uprawnienia");
+            }
         }
         void EdycjaSprzedazy(object sender, RoutedEventArgs e)
         {
-            Window6 win6 = new Window6();
+            if (who_logged == admin_login)
+            {
+                Window6 win6 = new Window6();
             win6.Show();
+            }
+            else if (who_logged == user_login)
+            {
+                MessageBox.Show("Niewystarczające uprawnienia");
+            }
         }
     }
 }
