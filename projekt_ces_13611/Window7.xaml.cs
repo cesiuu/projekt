@@ -19,8 +19,11 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class Window7 : Window
     {
-        string login = "admin";
-        string password = "admin";
+        string admin_login = "admin";
+        string admin_password = "admin";
+        string user_login = "user";
+        string user_password = "user";
+        string who_logged;
         public Window7()
         {
             InitializeComponent();
@@ -28,8 +31,9 @@ namespace projekt_ces_13611
 
         private void Login(object sender, RoutedEventArgs e)
         {
-            if (username.Text == login && userpass.Password == password)
+            if ((username.Text == admin_login && userpass.Password == admin_password) || (username.Text == user_login && userpass.Password == user_password))
                 {
+                    who_logged = username.Text;
                     MainWindow win1 = new MainWindow();
                     win1.Show();
                     Close();
