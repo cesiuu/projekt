@@ -149,12 +149,18 @@ namespace projekt_ces_13611
             if (who_logged == admin_login)
             {
                 Window6 win6 = new Window6();
-            win6.Show();
+                win6.Show();
             }
             else if (who_logged == user_login)
             {
                 MessageBox.Show("Niewystarczające uprawnienia");
             }
+        }
+
+        private void Wyloguj(object sender, RoutedEventArgs e)
+        {
+            win7.Show();
+            Close();
         }
     }
 }

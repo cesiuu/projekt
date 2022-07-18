@@ -157,5 +157,13 @@
             VerticalAlignment="Top"
             Click="EdycjaSprzedazy"
             Content="Edycja" />
+        <Button
+            Width="140"
+            Height="32"
+            Margin="668,20,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Wyloguj"
+            Content="Wyloguj" />
     </Grid>
 </Window>
