@@ -19,6 +19,8 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class Window7 : Window
     {
+        string login = "admin";
+        string password = "admin";
         public Window7()
         {
             InitializeComponent();
@@ -26,7 +28,16 @@ namespace projekt_ces_13611
 
         private void Login(object sender, RoutedEventArgs e)
         {
-
+            if (username.Text == login && userpass.Password == password)
+                {
+                    MainWindow win1 = new MainWindow();
+                    win1.Show();
+                    Close();
+                }
+            else
+            {
+                MessageBox.Show("Niepoprawna nazwa użytkownika lub hasło");
+            }
         }
     }
 }

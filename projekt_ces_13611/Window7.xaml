@@ -27,7 +27,7 @@
             VerticalAlignment="Top"
             Content="Nazwa użytkownika" />
         <PasswordBox
-            x:Name="password"
+            x:Name="userpass"
             Width="200"
             Height="33"
             Margin="160,103,0,0"
