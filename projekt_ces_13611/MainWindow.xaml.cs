@@ -161,6 +161,7 @@ namespace projekt_ces_13611
         {
             win7.Show();
             Close();
+            who_logged = "";
         }
     }
 }
