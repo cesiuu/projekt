@@ -36,6 +36,7 @@ namespace projekt_ces_13611
         string who_logged = Window7.who_logged;
         string admin_login = Window7.admin_login;
         string user_login = Window7.user_login;
+
         void FillKlienci(object sender, RoutedEventArgs e)
         {
             using (BloggingContext db = new BloggingContext(connectionString))
@@ -156,7 +157,6 @@ namespace projekt_ces_13611
                 MessageBox.Show("Niewystarczające uprawnienia");
             }
         }
-
         private void Wyloguj(object sender, RoutedEventArgs e)
         {
             win7.Show();

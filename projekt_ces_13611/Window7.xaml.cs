@@ -19,6 +19,9 @@ namespace projekt_ces_13611
     /// </summary>
     public partial class Window7 : Window
     {
+        /// <summary>
+        /// Zmienne potrzebne do logowania i nadawania uprawnień
+        /// </summary>
         public static string admin_login = "admin";
         public static string admin_password = "admin";
         public static string user_login = "user";
