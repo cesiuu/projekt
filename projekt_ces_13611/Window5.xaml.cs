@@ -41,7 +41,7 @@ namespace projekt_ces_13611
                     db.Add(new Koszyk { id_zamówienia = Convert.ToInt32(text12.Text), id_produktu = Convert.ToInt32(text13.Text) });
                     db.SaveChanges();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Wprowadzono niepoprawne dane.");
                 }
@@ -57,7 +57,7 @@ namespace projekt_ces_13611
                     db.Koszyk.Remove(rmv);
                     db.SaveChanges();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Wprowadzono niepoprawne dane.");
                 }
@@ -73,7 +73,7 @@ namespace projekt_ces_13611
                     db.Koszyk.Remove(rmv);
                     db.SaveChanges();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Wprowadzono niepoprawne dane.");
                 }
@@ -90,7 +90,7 @@ namespace projekt_ces_13611
                     var p = from k in db.Towary select k.id_produktu;
                     Produktidboxdodaj.ItemsSource = p.ToList();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Wprowadzono niepoprawne dane.");
                 }
@@ -108,7 +108,7 @@ namespace projekt_ces_13611
                     var p = from k in db.Towary select k.id_produktu;
                     Produktidboxusun.ItemsSource = p.ToList();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Wprowadzono niepoprawne dane.");
                 }
