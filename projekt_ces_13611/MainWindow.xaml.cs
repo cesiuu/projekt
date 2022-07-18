@@ -42,12 +42,12 @@ namespace projekt_ces_13611
         }
         void FillKategoria(object sender, RoutedEventArgs e)
         {
-                using (BloggingContext db = new BloggingContext(connectionString))
-                {
-                    var kategoria = from k in db.Kategoria_produktu select k;
-                    grid1.ItemsSource = kategoria.ToList();
-                }
+            using (BloggingContext db = new BloggingContext(connectionString))
+            {
+                var kategoria = from k in db.Kategoria_produktu select k;
+                grid1.ItemsSource = kategoria.ToList();
             }
+        }
         void FillKoszyk(object sender, RoutedEventArgs e)
         {
             using (BloggingContext db = new BloggingContext(connectionString))
@@ -55,7 +55,6 @@ namespace projekt_ces_13611
                 var koszyk = from k in db.Koszyk select k;
                 grid1.ItemsSource = koszyk.ToList();
             }
-
         }
         void FillProducenci(object sender, RoutedEventArgs e)
         {
@@ -64,7 +63,6 @@ namespace projekt_ces_13611
                 var producenci = from k in db.Producenci select k;
                 grid1.ItemsSource = producenci.ToList();
             }
-
         }
         void FillSprzedaz(object sender, RoutedEventArgs e)
         {
@@ -73,7 +71,6 @@ namespace projekt_ces_13611
                 var sprzedaz = from k in db.Sprzedaż select k;
                 grid1.ItemsSource = sprzedaz.ToList();
             }
-
         }
         void FillTowary(object sender, RoutedEventArgs e)
         {
@@ -82,7 +79,6 @@ namespace projekt_ces_13611
                 var towary = from k in db.Towary select k;
                 grid1.ItemsSource = towary.ToList();
             }
-
         }
         void EdycjaProducenta(object sender, RoutedEventArgs e)
         {

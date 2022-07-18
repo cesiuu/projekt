@@ -31,7 +31,6 @@ namespace projekt_ces_13611
             Usuwanieboxfill();
         }
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\a\source\repos\projekt_programowanie\projekt_programowanie\_data\Database1.mdf;Integrated Security = True";
-
         private void EdytujProducenta(object sender, RoutedEventArgs e)
         {
             using (BloggingContext db = new BloggingContext(connectionString))

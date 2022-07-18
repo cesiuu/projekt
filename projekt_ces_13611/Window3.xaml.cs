@@ -38,7 +38,7 @@ namespace projekt_ces_13611
             {
                 try
                 {
-                    db.Add(new Towary { nazwa_produktu = text3.Text, cena_produktu = Convert.ToInt32(text4.Text), id_kategorii = Convert.ToInt32(text5.Text), id_producenta = Convert.ToInt32(text5.Text) });
+                    db.Add(new Towary { nazwa_produktu = text3.Text, cena_produktu = Convert.ToInt32(text4.Text), id_kategorii = Convert.ToInt32(text5.Text), id_producenta = Convert.ToInt32(text6.Text) });
                     db.SaveChanges();
                 }
                 catch (Exception)
