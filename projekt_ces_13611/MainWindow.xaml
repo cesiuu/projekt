@@ -6,71 +6,69 @@
     xmlns:local="clr-namespace:projekt_ces_13611"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
-    Width="847"
+    Width="1014"
     Height="560"
     mc:Ignorable="d">
     <Grid Background="#AAAAAA">
         <DataGrid
             Name="grid1"
-            Height="288"
-            Margin="0,256,0,0"
-            VerticalAlignment="Top"
+            Margin="290,0,0,0"
             AutoGenerateColumns="True"
             IsReadOnly="True"
-            ItemsSource="{Binding}" />
+            ItemsSource="{Binding}" Height="544" VerticalAlignment="Top" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="264,20,0,0"
+            Margin="135,23,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="FillProducenci"
             Content="Przegląd" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="264,94,0,0"
+            Margin="135,97,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="FillTowary"
             Content="Przegląd" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="264,57,0,0"
+            Margin="135,60,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="FillKategoria"
             Content="Przegląd"
             RenderTransformOrigin="0.5,0.5" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="264,131,0,0"
+            Margin="135,134,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="FillKlienci"
             Content="Przegląd" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="264,205,0,0"
+            Margin="135,208,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="FillKoszyk"
             Content="Przegląd" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="264,168,0,0"
+            Margin="135,171,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="FillSprzedaz"
             Content="Przegląd" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="410,57,0,0"
+            Margin="204,60,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="EdycjaKategorii"
@@ -78,81 +76,81 @@
         <Label
             Width="auto"
             Height="32"
-            Margin="190,20,0,0"
+            Margin="60,23,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Producenci" />
         <Label
             Width="auto"
             Height="32"
-            Margin="146,57,0,0"
+            Margin="17,60,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Kategoria produktu" />
         <Label
             Width="auto"
             Height="32"
-            Margin="212,94,0,0"
+            Margin="83,97,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Towary" />
         <Label
             Width="auto"
             Height="32"
-            Margin="214,131,0,0"
+            Margin="85,134,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Klienci" />
         <Label
             Width="auto"
             Height="32"
-            Margin="214,205,0,0"
+            Margin="85,208,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Koszyk" />
         <Label
             Width="auto"
             Height="32"
-            Margin="200,168,0,0"
+            Margin="71,171,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Sprzedaż" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="410,20,0,0"
+            Margin="204,23,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="EdycjaProducenta"
             Content="Edycja" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="410,94,0,0"
+            Margin="204,97,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="EdycjaTowaru"
             Content="Edycja" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="410,131,0,0"
+            Margin="204,134,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="EdycjaKlienta"
             Content="Edycja" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="410,205,0,0"
+            Margin="204,208,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="EdycjaKoszyka"
             Content="Edycja" />
         <Button
-            Width="140"
+            Width="64"
             Height="32"
-            Margin="410,168,0,0"
+            Margin="204,171,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="EdycjaSprzedazy"
@@ -160,7 +158,7 @@
         <Button
             Width="140"
             Height="32"
-            Margin="668,20,0,0"
+            Margin="73,449,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Click="Wyloguj"

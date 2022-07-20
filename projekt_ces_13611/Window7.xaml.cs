@@ -26,7 +26,7 @@ namespace projekt_ces_13611
         public static string admin_password = "admin";
         public static string user_login = "user";
         public static string user_password = "user";
-        public static string who_logged;
+        public static string who_logged = "";
         public Window7()
         {
             InitializeComponent();
